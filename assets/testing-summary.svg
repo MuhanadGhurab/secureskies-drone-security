@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+  <title id="title">SecureSkies testing summary</title>
+  <desc id="desc">Reported integration tests: 24 total, 20 pass, 3 fail, 1 inconclusive.</desc>
+  <rect width="960" height="360" fill="#020617"/>
+  <text x="40" y="48" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">Reported Integration Tests</text>
+  <text x="40" y="78" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#94A3B8">Historical academic report summary - reproducible raw artifacts not included</text>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-weight="700">
+    <rect x="40" y="120" width="200" height="140" rx="12" fill="#0F172A" stroke="#475569" stroke-width="2"/>
+    <text x="140" y="180" text-anchor="middle" font-size="42" fill="#FFFFFF">24</text>
+    <text x="140" y="220" text-anchor="middle" font-size="16" fill="#94A3B8">Total</text>
+    <rect x="270" y="120" width="200" height="140" rx="12" fill="#0F172A" stroke="#22D3EE" stroke-width="2"/>
+    <text x="370" y="180" text-anchor="middle" font-size="42" fill="#22D3EE">20</text>
+    <text x="370" y="220" text-anchor="middle" font-size="16" fill="#94A3B8">Pass</text>
+    <rect x="500" y="120" width="200" height="140" rx="12" fill="#0F172A" stroke="#F87171" stroke-width="2"/>
+    <text x="600" y="180" text-anchor="middle" font-size="42" fill="#F87171">3</text>
+    <text x="600" y="220" text-anchor="middle" font-size="16" fill="#94A3B8">Fail</text>
+    <rect x="730" y="120" width="200" height="140" rx="12" fill="#0F172A" stroke="#FBBF24" stroke-width="2"/>
+    <text x="830" y="180" text-anchor="middle" font-size="42" fill="#FBBF24">1</text>
+    <text x="830" y="220" text-anchor="middle" font-size="16" fill="#94A3B8">Inconclusive</text>
+  </g>
+  <text x="40" y="310" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#64748B">Fails: secure gateway | failsafe/RTH | compliance - Inconclusive: ML threat analysis</text>
+</svg>

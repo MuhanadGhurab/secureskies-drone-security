@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">SecureSkies prototype status</title>
+  <desc id="desc">Status cards showing partially integrated prototype, full deployment not completed, and digital twin planned.</desc>
+  <rect width="960" height="420" fill="#020617"/>
+  <text x="40" y="50" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">Prototype Status</text>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="40" y="90" width="270" height="120" rx="12" fill="#0F172A" stroke="#22D3EE" stroke-width="2"/>
+    <text x="60" y="130" font-size="14" fill="#94A3B8">Original Academic Project</text>
+    <text x="60" y="168" font-size="20" font-weight="700" fill="#22D3EE">Partially Integrated</text>
+    <text x="60" y="192" font-size="16" fill="#FFFFFF">Prototype</text>
+    <rect x="345" y="90" width="270" height="120" rx="12" fill="#0F172A" stroke="#F87171" stroke-width="2"/>
+    <text x="365" y="130" font-size="14" fill="#94A3B8">Full Autonomous Deployment</text>
+    <text x="365" y="175" font-size="22" font-weight="700" fill="#F87171">Not Completed</text>
+    <rect x="650" y="90" width="270" height="120" rx="12" fill="#0F172A" stroke="#2563EB" stroke-width="2"/>
+    <text x="670" y="130" font-size="14" fill="#94A3B8">Software Digital Twin</text>
+    <text x="670" y="175" font-size="22" font-weight="700" fill="#38BDF8">Planned (4D)</text>
+    <rect x="40" y="240" width="880" height="120" rx="12" fill="#0F172A" stroke="#475569" stroke-width="2"/>
+    <text x="60" y="285" font-size="14" fill="#94A3B8">Second Place - University Graduation Project</text>
+    <text x="60" y="320" font-size="18" fill="#FFFFFF">Owner-verified; supporting artifact pending.</text>
+  </g>
+</svg>
