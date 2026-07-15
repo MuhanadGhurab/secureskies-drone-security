@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">SecureSkies social preview</title>
+  <desc id="desc">Social preview card for SecureSkies drone security academic prototype portfolio.</desc>
+  <rect width="1280" height="640" fill="#020617"/>
+  <rect x="0" y="0" width="1280" height="640" fill="#0F172A" opacity="0.9"/>
+  <text x="80" y="180" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#FFFFFF" letter-spacing="3">SECURESKIES</text>
+  <text x="80" y="250" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#22D3EE">Drone Security Research and Academic Prototype</text>
+  <text x="80" y="310" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" fill="#94A3B8">Four-person university team - Partially integrated prototype</text>
+  <text x="80" y="360" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" fill="#94A3B8">Full autonomous deployment: not completed</text>
+  <text x="80" y="440" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" fill="#38BDF8">Second Place - University Graduation Project</text>
+  <text x="80" y="480" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" fill="#64748B">Owner-verified; supporting artifact pending.</text>
+  <g transform="translate(980,280)">
+    <rect x="-40" y="-20" width="80" height="40" rx="8" fill="#0B1224" stroke="#2563EB" stroke-width="3"/>
+    <line x1="-40" y1="0" x2="-90" y2="-50" stroke="#38BDF8" stroke-width="4"/>
+    <line x1="40" y1="0" x2="90" y2="-50" stroke="#38BDF8" stroke-width="4"/>
+    <line x1="-40" y1="0" x2="-90" y2="50" stroke="#38BDF8" stroke-width="4"/>
+    <line x1="40" y1="0" x2="90" y2="50" stroke="#38BDF8" stroke-width="4"/>
+    <circle cx="-90" cy="-50" r="22" fill="none" stroke="#22D3EE" stroke-width="3"/>
+    <circle cx="90" cy="-50" r="22" fill="none" stroke="#22D3EE" stroke-width="3"/>
+    <circle cx="-90" cy="50" r="22" fill="none" stroke="#22D3EE" stroke-width="3"/>
+    <circle cx="90" cy="50" r="22" fill="none" stroke="#22D3EE" stroke-width="3"/>
+  </g>
+</svg>

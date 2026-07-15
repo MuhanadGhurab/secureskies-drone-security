@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">SECURESKIES - Drone Security Research and Academic Prototype</title>
+  <desc id="desc">Original geometric illustration of a quadcopter, secure perimeter shield, telemetry streams, network nodes, and a ground-control console on a deep navy background with cyan and electric-blue accents.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="55%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <g stroke="#1E293B" stroke-width="1" opacity="0.55">
+    <path d="M40 80 H1160 M40 140 H1160 M40 200 H1160 M40 260 H1160 M40 320 H1160"/>
+    <path d="M120 40 V380 M240 40 V380 M360 40 V380 M480 40 V380 M600 40 V380 M720 40 V380 M840 40 V380 M960 40 V380 M1080 40 V380"/>
+  </g>
+  <g transform="translate(860,210)">
+    <path d="M0,-92 L70,-62 L70,28 C70,68 35,98 0,112 C-35,98 -70,68 -70,28 L-70,-62 Z" fill="#0B1224" stroke="#38BDF8" stroke-width="3"/>
+    <path d="M0,-68 L48,-46 L48,20 C48,48 24,70 0,80 C-24,70 -48,48 -48,20 L-48,-46 Z" fill="none" stroke="#22D3EE" stroke-width="1.5" opacity="0.7"/>
+    <circle cx="0" cy="5" r="14" fill="none" stroke="#2563EB" stroke-width="3"/>
+    <path d="M0 -6 L0 8 M-8 4 L0 12 L8 4" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g stroke="#22D3EE" stroke-width="1.5" fill="#22D3EE">
+    <circle cx="180" cy="120" r="4"/>
+    <circle cx="250" cy="170" r="4"/>
+    <circle cx="210" cy="230" r="4"/>
+    <circle cx="300" cy="210" r="4"/>
+    <path d="M180 120 L250 170 L210 230 L300 210" fill="none" opacity="0.75"/>
+  </g>
+  <g fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.85">
+    <path d="M320 150 C420 120, 520 180, 620 140"/>
+    <path d="M320 190 C430 210, 530 160, 640 190"/>
+    <path d="M320 230 C440 250, 540 210, 650 240"/>
+  </g>
+  <g fill="#38BDF8">
+    <circle cx="620" cy="140" r="3"/>
+    <circle cx="640" cy="190" r="3"/>
+    <circle cx="650" cy="240" r="3"/>
+  </g>
+  <g transform="translate(500,175)">
+    <rect x="-28" y="-14" width="56" height="28" rx="6" fill="#0F172A" stroke="#2563EB" stroke-width="2.5"/>
+    <line x1="-28" y1="0" x2="-70" y2="-36" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="28" y1="0" x2="70" y2="-36" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-28" y1="0" x2="-70" y2="36" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="28" y1="0" x2="70" y2="36" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="-70" cy="-36" r="16" fill="none" stroke="#22D3EE" stroke-width="2.5"/>
+    <circle cx="70" cy="-36" r="16" fill="none" stroke="#22D3EE" stroke-width="2.5"/>
+    <circle cx="-70" cy="36" r="16" fill="none" stroke="#22D3EE" stroke-width="2.5"/>
+    <circle cx="70" cy="36" r="16" fill="none" stroke="#22D3EE" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="5" fill="#FFFFFF"/>
+  </g>
+  <g transform="translate(140,300)">
+    <rect x="0" y="0" width="160" height="70" rx="8" fill="#0B1224" stroke="#475569" stroke-width="2"/>
+    <rect x="12" y="12" width="88" height="46" rx="4" fill="#020617" stroke="#2563EB" stroke-width="1.5"/>
+    <rect x="110" y="14" width="36" height="10" rx="2" fill="#22D3EE" opacity="0.9"/>
+    <rect x="110" y="30" width="36" height="10" rx="2" fill="#38BDF8" opacity="0.7"/>
+    <rect x="110" y="46" width="36" height="10" rx="2" fill="#475569" opacity="0.9"/>
+  </g>
+  <g transform="translate(980,320)">
+    <rect x="0" y="0" width="150" height="36" rx="8" fill="#0B1224" stroke="#22D3EE" stroke-width="1.5"/>
+    <circle cx="20" cy="18" r="6" fill="#22D3EE"/>
+    <text x="36" y="23" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#FFFFFF">Integrity: DOCUMENTED</text>
+  </g>
+  <text x="60" y="78" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#FFFFFF" letter-spacing="4">SECURESKIES</text>
+  <text x="60" y="118" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" fill="#22D3EE">Drone Security Research and Academic Prototype</text>
+  <text x="60" y="150" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#94A3B8">Physical Security | Network Monitoring | Secure Telemetry Concepts</text>
+</svg>

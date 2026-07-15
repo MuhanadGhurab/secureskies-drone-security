@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">SECURESKIES static banner</title>
+  <desc id="desc">Static fallback SecureSkies banner with geometric drone, shield, and ground console.</desc>
+  <rect width="1200" height="420" fill="#020617"/>
+  <rect x="0" y="0" width="1200" height="420" fill="#0F172A" opacity="0.85"/>
+  <g stroke="#1E293B" stroke-width="1" opacity="0.45">
+    <path d="M40 80 H1160 M40 200 H1160 M40 320 H1160"/>
+    <path d="M240 40 V380 M480 40 V380 M720 40 V380 M960 40 V380"/>
+  </g>
+  <g transform="translate(860,210)">
+    <path d="M0,-92 L70,-62 L70,28 C70,68 35,98 0,112 C-35,98 -70,68 -70,28 L-70,-62 Z" fill="#0B1224" stroke="#38BDF8" stroke-width="3"/>
+    <circle cx="0" cy="5" r="14" fill="none" stroke="#2563EB" stroke-width="3"/>
+  </g>
+  <g transform="translate(500,175)">
+    <rect x="-28" y="-14" width="56" height="28" rx="6" fill="#0F172A" stroke="#2563EB" stroke-width="2.5"/>
+    <line x1="-28" y1="0" x2="-70" y2="-36" stroke="#38BDF8" stroke-width="3"/>
+    <line x1="28" y1="0" x2="70" y2="-36" stroke="#38BDF8" stroke-width="3"/>
+    <line x1="-28" y1="0" x2="-70" y2="36" stroke="#38BDF8" stroke-width="3"/>
+    <line x1="28" y1="0" x2="70" y2="36" stroke="#38BDF8" stroke-width="3"/>
+    <circle cx="-70" cy="-36" r="16" fill="none" stroke="#22D3EE" stroke-width="2.5"/>
+    <circle cx="70" cy="-36" r="16" fill="none" stroke="#22D3EE" stroke-width="2.5"/>
+    <circle cx="-70" cy="36" r="16" fill="none" stroke="#22D3EE" stroke-width="2.5"/>
+    <circle cx="70" cy="36" r="16" fill="none" stroke="#22D3EE" stroke-width="2.5"/>
+  </g>
+  <g transform="translate(140,300)">
+    <rect x="0" y="0" width="160" height="70" rx="8" fill="#0B1224" stroke="#475569" stroke-width="2"/>
+    <rect x="12" y="12" width="88" height="46" rx="4" fill="#020617" stroke="#2563EB" stroke-width="1.5"/>
+  </g>
+  <text x="60" y="78" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#FFFFFF" letter-spacing="4">SECURESKIES</text>
+  <text x="60" y="118" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" fill="#22D3EE">Drone Security Research and Academic Prototype</text>
+  <text x="60" y="150" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#94A3B8">Physical Security | Network Monitoring | Secure Telemetry Concepts</text>
+</svg>
