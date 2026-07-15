@@ -1,0 +1,106 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install validators
+        run: |
+          python -m pip install --upgrade pip
+          pip install pymarkdownlnt
+
+      - name: Forbidden file validation
+        run: |
+          set -euo pipefail
+          if git ls-files | grep -Ei '\.pdf$|source/original/|extracted/|processing/|redacted-working/'; then
+            echo "Forbidden path or PDF tracked"
+            exit 1
+          fi
+          if find . -type f \( -name '*.pdf' -o -name '*.env' -o -name '*.pem' -o -name '*.key' \) ! -path './.git/*' | grep -q .; then
+            echo "Forbidden file present in working tree"
+            find . -type f \( -name '*.pdf' -o -name '*.env' -o -name '*.pem' -o -name '*.key' \) ! -path './.git/*'
+            exit 1
+          fi
+          if find . -type d \( -name extracted -o -name processing -o -name 'source' \) ! -path './.git/*' | grep -q .; then
+            echo "Forbidden directory present"
+            exit 1
+          fi
+
+      - name: Secret and sensitive-ID pattern scan
+        run: |
+          set -euo pipefail
+          # Soft fail patterns that look like secrets
+          if git grep -nE 'AKIA[0-9A-Z]{16}|BEGIN (RSA |OPENSSH |EC )?PRIVATE KEY|api[_-]?key\s*[:=]\s*["\x27]?[A-Za-z0-9_\-]{16,}' -- '*.md' '*.yml' '*.yaml' '*.svg' '*.json' 2>/dev/null; then
+            echo "Potential secret pattern found"
+            exit 1
+          fi
+          # Student-ID-like: 8-12 digit tokens on own; exclude common years/counts by context risk — fail any 8-12 digit standalone numbers in tracked text
+          # Allow version-like x.y.z by excluding; scan for long digit runs often used as IDs
+          if git grep -nE '(^|[^0-9.])[0-9]{8,12}([^0-9]|$)' -- '*.md' '*.yml' '*.yaml' '*.svg' 2>/dev/null; then
+            echo "Student-ID-like numeric pattern found"
+            exit 1
+          fi
+
+      - name: SVG XML well-formedness
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import sys, xml.etree.ElementTree as ET
+          from pathlib import Path
+          failed = False
+          for path in Path("assets").glob("*.svg"):
+              try:
+                  ET.parse(path)
+                  print("OK", path)
+              except Exception as e:
+                  print("FAIL", path, e)
+                  failed = True
+          sys.exit(1 if failed else 0)
+          PY
+
+      - name: README asset presence
+        run: |
+          set -euo pipefail
+          for f in \
+            assets/secureskies-banner.svg \
+            assets/secureskies-static-banner.svg \
+            assets/historical-system-overview.svg \
+            assets/prototype-status.svg \
+            assets/testing-summary.svg \
+            assets/social-preview.svg
+          do
+            test -f "$f" || { echo "Missing $f"; exit 1; }
+          done
+
+      - name: File size sanity
+        run: |
+          set -euo pipefail
+          # Fail unexpectedly large tracked files (>2MB)
+          git ls-files -z | while IFS= read -r -d '' f; do
+            size=$(wc -c < "$f")
+            if [ "$size" -gt 2000000 ]; then
+              echo "File too large: $f ($size bytes)"
+              exit 1
+            fi
+          done
+
+      - name: Markdown lint (selected)
+        run: |
+          pymarkdown --config .pymarkdown.json scan README.md TEAM.md SECURITY.md docs/
