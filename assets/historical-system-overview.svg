@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">SecureSkies historical system overview</title>
+  <desc id="desc">Original diagram: Operator, Mission Planner, Raspberry Pi companion, Pixhawk, GPS, motors, FPV, network monitoring, and AWS Console concepts.</desc>
+  <rect width="960" height="540" fill="#020617"/>
+  <text x="40" y="48" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">SecureSkies - Historical System Overview</text>
+  <text x="40" y="78" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#94A3B8">Modern public reconstruction based on the original academic report</text>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#FFFFFF">
+    <rect x="40" y="120" width="160" height="56" rx="8" fill="#0F172A" stroke="#2563EB" stroke-width="2"/>
+    <text x="120" y="154" text-anchor="middle">Operator</text>
+    <rect x="260" y="120" width="180" height="56" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+    <text x="350" y="146" text-anchor="middle">Mission Planner</text>
+    <text x="350" y="164" text-anchor="middle" fill="#94A3B8" font-size="12">Ground tooling</text>
+    <rect x="500" y="120" width="180" height="56" rx="8" fill="#0F172A" stroke="#22D3EE" stroke-width="2"/>
+    <text x="590" y="146" text-anchor="middle">Raspberry Pi 4</text>
+    <text x="590" y="164" text-anchor="middle" fill="#94A3B8" font-size="12">Companion computer</text>
+    <rect x="740" y="120" width="180" height="56" rx="8" fill="#0F172A" stroke="#2563EB" stroke-width="2"/>
+    <text x="830" y="154" text-anchor="middle">Pixhawk 2.4.8</text>
+    <rect x="500" y="240" width="180" height="56" rx="8" fill="#0F172A" stroke="#475569" stroke-width="2"/>
+    <text x="590" y="266" text-anchor="middle">Net monitor / IDPS</text>
+    <text x="590" y="284" text-anchor="middle" fill="#94A3B8" font-size="12">Unnamed IDPS</text>
+    <rect x="260" y="240" width="180" height="56" rx="8" fill="#0F172A" stroke="#475569" stroke-width="2"/>
+    <text x="350" y="274" text-anchor="middle">Alert concepts</text>
+    <rect x="740" y="240" width="180" height="56" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+    <text x="830" y="266" text-anchor="middle">GPS / Motors / FPV</text>
+    <text x="830" y="284" text-anchor="middle" fill="#94A3B8" font-size="12">Edge sensors and effectors</text>
+    <rect x="500" y="360" width="180" height="56" rx="8" fill="#0F172A" stroke="#22D3EE" stroke-width="2"/>
+    <text x="590" y="386" text-anchor="middle">AWS Console</text>
+    <text x="590" y="404" text-anchor="middle" fill="#94A3B8" font-size="12">Services unspecified</text>
+  </g>
+  <g stroke="#38BDF8" stroke-width="2" fill="none">
+    <path d="M200 148 H260"/>
+    <path d="M440 148 H500"/>
+    <path d="M680 148 H740"/>
+    <path d="M590 176 V240"/>
+    <path d="M500 268 H440"/>
+    <path d="M830 176 V240"/>
+    <path d="M590 296 V360"/>
+  </g>
+  <text x="40" y="500" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#64748B">Historical academic concept - not a claim of full system deployment</text>
+</svg>
