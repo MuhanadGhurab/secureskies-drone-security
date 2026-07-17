@@ -4,6 +4,15 @@ All notable public documentation changes for `secureskies-drone-security` are li
 
 ## [Unreleased]
 
+## [2026-07-17] — MGH.PROGRAM.EMERGING.1
+
+### Added
+
+- Emerging systems pack under `docs/emerging/`
+- Drone security case study, OT/IoT surface notes, responsible AI notes
+- Ownership boundary checklist for public publication gates
+
+
 ### Added
 
 - Public historical documentation foundation (MGH.GITHUB.ECOSYSTEM.4C)
