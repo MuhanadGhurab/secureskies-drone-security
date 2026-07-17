@@ -101,6 +101,23 @@ jobs:
             fi
           done
 
+
+      - name: Emerging pack presence
+        run: |
+          set -euo pipefail
+          for f in \
+            docs/emerging/README.md \
+            docs/emerging/DRONE-SECURITY-CASE-STUDY.md \
+            docs/emerging/OT-IOT-THREAT-SURFACE.md \
+            docs/emerging/RESPONSIBLE-AI-NOTES.md \
+            docs/emerging/OWNERSHIP-BOUNDARY-CHECKLIST.md
+          do
+            test -f "$f" || { echo "Missing $f"; exit 1; }
+          done
+          grep -q 'MGH.PROGRAM.EMERGING.1' README.md
+          grep -q 'supporting artifact pending' README.md
+          grep -q 'partially integrated prototype' README.md
+
       - name: Markdown lint (selected)
         run: |
           pymarkdown --config .pymarkdown.json scan README.md TEAM.md SECURITY.md docs/

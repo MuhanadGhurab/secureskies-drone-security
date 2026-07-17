@@ -66,6 +66,18 @@ Start here: [`docs/START-HERE.md`](docs/START-HERE.md) · Status detail: [`docs/
 
 ---
 
+## Emerging systems pack (MGH.PROGRAM.EMERGING.1)
+
+| Doc | Purpose |
+|-----|---------|
+| [`docs/emerging/README.md`](docs/emerging/README.md) | Pack index and boundaries |
+| [`docs/emerging/DRONE-SECURITY-CASE-STUDY.md`](docs/emerging/DRONE-SECURITY-CASE-STUDY.md) | Sanitized security case study |
+| [`docs/emerging/OT-IOT-THREAT-SURFACE.md`](docs/emerging/OT-IOT-THREAT-SURFACE.md) | Adjacent OT/IoT thinking |
+| [`docs/emerging/RESPONSIBLE-AI-NOTES.md`](docs/emerging/RESPONSIBLE-AI-NOTES.md) | Responsible AI / autonomy honesty |
+| [`docs/emerging/OWNERSHIP-BOUNDARY-CHECKLIST.md`](docs/emerging/OWNERSHIP-BOUNDARY-CHECKLIST.md) | Publication gate checklist |
+
+---
+
 ## Team
 
 See [`TEAM.md`](TEAM.md).
