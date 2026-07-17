@@ -76,7 +76,6 @@ Start here: [`docs/START-HERE.md`](docs/START-HERE.md) · Status detail: [`docs/
 | [`docs/emerging/RESPONSIBLE-AI-NOTES.md`](docs/emerging/RESPONSIBLE-AI-NOTES.md) | Responsible AI / autonomy honesty |
 | [`docs/emerging/OWNERSHIP-BOUNDARY-CHECKLIST.md`](docs/emerging/OWNERSHIP-BOUNDARY-CHECKLIST.md) | Publication gate checklist |
 
-
 ---
 
 ## Team
